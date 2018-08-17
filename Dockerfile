@@ -2,14 +2,14 @@ FROM alpine:3.6
 
 ENV VER=3.10
 ENV CONFIG_JSON1={\"log\":{\"access\":\"\",\"error\":\"\",\"loglevel\":\"warning\"},\"inbound\":{\"protocol\":\"vmess\",\"port\":
-ENV PORT=80
+ENV PORT=8080
 ENV CONFIG_JSON2=,\"settings\":{\"clients\":[{\"id\":\"
 ENV UUID=91cb66ba-a373-43a0-8169-33d4eeaeb857
 ENV CONFIG_JSON3=\",\"alterId\":64}]},\"streamSettings\":{\"network\":\"ws\"}},\"inboundDetour\":[],\"outbound\":{\"protocol\":\"freedom\",\"settings\":{}}}
 
-RUN apk add --no-cache openssl \
+RUN apk add --no-cache curl \
   && cd /root \
-  && wget -q https://github.com/xiaokaixuan/v2ray-heroku/releases/download/v$VER/v2ray-linux-64.zip \
+  && curl -OsL https://github.com/xiaokaixuan/v2ray-heroku/releases/download/v$VER/v2ray-linux-64.zip \
   && unzip v2ray-linux-64.zip \
   && cd v2ray-v$VER-linux-64 \
   && chmod +x v2ray v2ctl \
