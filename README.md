@@ -4,8 +4,6 @@
 
 2.服务端部署后，应 open app ，显示 Bad Request，表示部署成功。
 
-  如更新 v2ray 版本，修改 app settings-->Config Vars-->VER，程序自动重启，通过view Logs确认。
-
 3.客户端可使用websocket+tls传输协议或者 websocket+vmess（auto加密）。
 
 
