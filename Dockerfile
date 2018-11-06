@@ -1,11 +1,11 @@
 FROM alpine:3.6
 
-ENV VER=4.1
-ENV CONFIG_JSON1={\"log\":{\"access\":\"\",\"error\":\"\",\"loglevel\":\"warning\"},\"inbound\":{\"protocol\":\"vmess\",\"port\":
+ENV VER=4.2
+ENV CONFIG_JSON1={\"log\":{\"access\":\"\",\"error\":\"\",\"loglevel\":\"warning\"},\"inbounds\":[{\"protocol\":\"vmess\",\"port\":
 ENV PORT=8080
 ENV CONFIG_JSON2=,\"settings\":{\"clients\":[{\"id\":\"
 ENV UUID=91cb66ba-a373-43a0-8169-33d4eeaeb857
-ENV CONFIG_JSON3=\",\"alterId\":64}]},\"streamSettings\":{\"network\":\"ws\"}},\"inboundDetour\":[],\"outbound\":{\"protocol\":\"freedom\",\"settings\":{}}}
+ENV CONFIG_JSON3=\",\"alterId\":64}]},\"streamSettings\":{\"network\":\"ws\"}}],\"outbounds\":[{\"protocol\":\"freedom\",\"settings\":{}}]}
 
 RUN apk add --no-cache curl \
   && cd /root \
