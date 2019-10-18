@@ -1,10 +1,10 @@
 {
-  "name": "V2ray",
-  "description": "Deploy V2ray to Heroku.",
-  "keywords": ["V2ray"],
+  "name": "V2Ray",
+  "description": "Deploy V2Ray to Heroku.",
+  "keywords": ["V2Ray"],
   "env": {
     "UUID": {
-       "description": "Vmess client UUID",
+       "description": "VMess client UUID",
        "value": "91cb66ba-a373-43a0-8169-33d4eeaeb857"
      }
   },
