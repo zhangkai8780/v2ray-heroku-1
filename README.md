@@ -6,6 +6,10 @@
 
 > 3. 客户端可使用`Websocket`端口`80`，或`Websocket+TLS`端口`443`传输。
 
+### 附加
+
+> 1. 一键部署 V2Ray 到 [KubeSail](https://kubesail.com/template/kaixuan1115/v2ray-heroku/)。
+
 ### 参考 
 *https://github.com/v2ray/v2ray-core*
 
