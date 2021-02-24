@@ -12,9 +12,7 @@
 > /v2ray/key.pem
 > ```
 
-### 附加
-
-> 1. 一键部署 V2Ray 到 [KubeSail](https://kubesail.com/template/kaixuan1115/v2ray-heroku/)。
+[V2ray-core下载](https://github.com/xiaokaixuan/v2ray-heroku/releases/tag/v4.34.0)
 
 ### 参考 
 *https://github.com/v2fly/v2ray-core*
